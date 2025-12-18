@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medi Health Care Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #b22222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    nav {
+      background: #8b1a1a;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+    h2 {
+      color: #b22222;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    table th {
+      background: #f0f0f0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #b22222;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Logo.jpeg" alt="Medi Health Care Center Logo" />
+  <h1>Medi Health Care Center</h1>
+  <p>Your Trusted Medical & Diagnostic Partner</p>
+</header>
+
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#services">Services</a>
+  <a href="#doctors">Doctors</a>
+  <a href="#lab">Laboratory (Sindlab)</a>
+  <a href="#appointment">Appointments</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Medi Health Care Center</h2>
+  <p>
+    Medi Health Care Center (MHCC) is a modern healthcare facility providing
+    consultant clinics, diagnostic laboratory services in collaboration with
+    <strong>Sindlab</strong>, and ultrasound services. Our mission is to deliver
+    accurate diagnostics and quality healthcare under one roof.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Consultant Clinics (Multiple Specialties)</li>
+    <li>Diagnostic Laboratory (Sindlab)</li>
+    <li>Ultrasound Services</li>
+    <li>Home Sample Collection</li>
+    <li>Online Test Report Inquiry</li>
+  </ul>
+</section>
+
+<section id="doctors">
+  <h2>Doctors & Timings</h2>
+  <table>
+    <tr>
+      <th>Doctor Name</th>
+      <th>Specialty</th>
+      <th>Timings</th>
+      <th>Fee (PKR)</th>
+    </tr>
+    <tr>
+      <td>Dr. Example A</td>
+      <td>General Physician</td>
+      <td>5:00 PM - 9:00 PM</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>Dr. Example B</td>
+      <td>Gynecologist</td>
+      <td>6:00 PM - 9:00 PM</td>
+      <td>2000</td>
+    </tr>
+  </table>
+</section>
+
+<section id="appointment">
+  <h2>Book an Appointment</h2>
+  <form>
+    <div class="form-group">
+      <input type="text" placeholder="Patient Name" required />
+    </div>
+    <div class="form-group">
+      <input type="tel" placeholder="Phone Number" required />
+    </div>
+    <div class="form-group">
+      <select required>
+        <option value="">Select Doctor</option>
+        <option>Dr. Example A</option>
+        <option>Dr. Example B</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="date" required />
+    </div>
+    <button class="btn" type="submit">Submit Appointment</button>
+  </form>
+</section>
+
+<section id="lab">
+  <h2>Laboratory Services (Sindlab)</h2>
+  <h3>Lab Timings</h3>
+  <p>Monday – Sunday: 8:00 AM – 10:00 PM</p>
+
+  <h3>Home Sample Collection</h3>
+  <p>Home sample collection is available. Please call or email us to schedule.</p>
+
+  <h3>Test Price List</h3>
+  <table>
+    <tr>
+      <th>Test Name</th>
+      <th>Price (PKR)</th>
+    </tr>
+    <tr>
+      <td>CBC</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <td>LFT</td>
+      <td>2500</td>
+    </tr>
+    <tr>
+      <td>RFT</td>
+      <td>2200</td>
+    </tr>
+  </table>
+
+  <h3>Online Test Report Inquiry</h3>
+  <form>
+    <div class="form-group">
+      <input type="text" placeholder="Lab Reference / Invoice Number" required />
+    </div>
+    <button class="btn" type="submit">Check Report</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Address:</strong> Midway Commercial-B, OPP: Masjid-e-Sarwar near Park, Bahria Town Karachi</p>
+  <p><strong>Phone:</strong> 0336-8409409</p>
+  <p><strong>Email:</strong> medihealthcarebahria@gmail.com</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Medi Health Care Center (MHCC). All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
