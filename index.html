@@ -4,224 +4,206 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Medi Health Care Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      color: #333;
+    :root{
+      --primary:#b22222;
+      --secondary:#0d6efd;
+      --light:#f8f9fa;
+      --dark:#212529;
     }
-    header {
-      background: #b22222;
-      color: white;
-      padding: 20px;
-      text-align: center;
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:#f4f6f9;
+      color:var(--dark);
     }
-    header img {
-      max-width: 120px;
-      display: block;
-      margin: 0 auto 10px;
+    header{
+      background:linear-gradient(135deg,#b22222,#8b1a1a);
+      color:#fff;
+      padding:40px 20px;
+      text-align:center;
     }
-    nav {
-      background: #8b1a1a;
-      padding: 10px;
-      text-align: center;
+    header img{
+      width:110px;
+      margin-bottom:15px;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+    nav{
+      background:#fff;
+      box-shadow:0 2px 10px rgba(0,0,0,0.08);
+      position:sticky;
+      top:0;
+      z-index:100;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-      background: white;
-      margin-bottom: 20px;
-      border-radius: 6px;
+    nav ul{
+      list-style:none;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin:0;
+      padding:10px 0;
     }
-    h2 {
-      color: #b22222;
-      margin-bottom: 20px;
+    nav ul li a{
+      text-decoration:none;
+      color:var(--dark);
+      padding:10px 18px;
+      font-weight:500;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    nav ul li a:hover{color:var(--primary);}
+    section{
+      max-width:1200px;
+      margin:40px auto;
+      padding:0 20px;
     }
-    table th, table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
+    .card{
+      background:#fff;
+      border-radius:14px;
+      padding:30px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.07);
     }
-    table th {
-      background: #f0f0f0;
+    h2{
+      color:var(--primary);
+      margin-bottom:20px;
     }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #b22222;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-top: 10px;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
     }
-    footer {
-      background: #222;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+    .service-box{
+      padding:25px;
+      border-radius:12px;
+      background:var(--light);
+      text-align:center;
+      font-weight:500;
     }
-    footer p {
-      margin: 5px 0;
+    table{
+      width:100%;
+      border-collapse:collapse;
     }
-    .form-group {
-      margin-bottom: 15px;
+    table th,table td{
+      padding:14px;
+      border-bottom:1px solid #e0e0e0;
+      text-align:left;
     }
-    input, select, textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+    table th{background:#f1f1f1;}
+    input,select,button{
+      width:100%;
+      padding:14px;
+      margin-bottom:15px;
+      border-radius:10px;
+      border:1px solid #ccc;
+      font-family:'Poppins',sans-serif;
     }
+    button{
+      background:var(--primary);
+      color:#fff;
+      border:none;
+      font-weight:600;
+      cursor:pointer;
+    }
+    button:hover{background:#8b1a1a;}
+    footer{
+      background:#111;
+      color:#fff;
+      padding:30px 20px;
+      text-align:center;
+    }
+    footer p{margin:6px 0;font-size:14px;}
   </style>
 </head>
 <body>
 
 <header>
-  <img src="Logo.jpeg" alt="Medi Health Care Center Logo" />
+  <img src="Logo.jpeg" alt="Medi Health Care Center Logo">
   <h1>Medi Health Care Center</h1>
-  <p>Your Trusted Medical & Diagnostic Partner</p>
+  <p>Modern Care • Trusted Diagnostics • Expert Consultants</p>
 </header>
 
 <nav>
-  <a href="#about">About Us</a>
-  <a href="#services">Services</a>
-  <a href="#doctors">Doctors</a>
-  <a href="#lab">Laboratory (Sindlab)</a>
-  <a href="#appointment">Appointments</a>
-  <a href="#contact">Contact</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#doctors">Doctors</a></li>
+    <li><a href="#appointment">Appointment</a></li>
+    <li><a href="#lab">Sindlab</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
 <section id="about">
-  <h2>About Medi Health Care Center</h2>
-  <p>
-    Medi Health Care Center (MHCC) is a modern healthcare facility providing
-    consultant clinics, diagnostic laboratory services in collaboration with
-    <strong>Sindlab</strong>, and ultrasound services. Our mission is to deliver
-    accurate diagnostics and quality healthcare under one roof.
-  </p>
+  <div class="card">
+    <h2>About Us</h2>
+    <p>Medi Health Care Center (MHCC) is a modern medical facility in Bahria Town Karachi offering consultant clinics, ultrasound services and diagnostic laboratory services in partnership with <strong>Sindlab</strong>. We focus on accuracy, care and convenience.</p>
+  </div>
 </section>
 
 <section id="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li>Consultant Clinics (Multiple Specialties)</li>
-    <li>Diagnostic Laboratory (Sindlab)</li>
-    <li>Ultrasound Services</li>
-    <li>Home Sample Collection</li>
-    <li>Online Test Report Inquiry</li>
-  </ul>
+  <div class="card">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="service-box">Consultant Clinics</div>
+      <div class="service-box">Ultrasound</div>
+      <div class="service-box">Sindlab Diagnostics</div>
+      <div class="service-box">Home Sample Collection</div>
+      <div class="service-box">Online Report Inquiry</div>
+    </div>
+  </div>
 </section>
 
 <section id="doctors">
-  <h2>Doctors & Timings</h2>
-  <table>
-    <tr>
-      <th>Doctor Name</th>
-      <th>Specialty</th>
-      <th>Timings</th>
-      <th>Fee (PKR)</th>
-    </tr>
-    <tr>
-      <td>Dr. Samad Aftab</td>
-      <td>Great Pharmacist</td>
-      <td>9:00 AM - 7:00 PM (Monday - Friday)</td>
-      <td>15000</td>
-    </tr>
-    <tr>
-      <td>Dr. Bellobay</td>
-      <td>Psychiatrist</td>
-      <td>12:00 AM - 4:00 AM (All Week)</td>
-      <td>FREE</td>
-    </tr>
-  </table>
+  <div class="card">
+    <h2>Doctors & Fees</h2>
+    <table>
+      <tr><th>Doctor</th><th>Specialty</th><th>Timings</th><th>Fee (PKR)</th></tr>
+      <tr><td>Dr. Example A</td><td>General Physician</td><td>5:00 PM – 9:00 PM</td><td>1500</td></tr>
+      <tr><td>Dr. Example B</td><td>Gynecologist</td><td>6:00 PM – 9:00 PM</td><td>2000</td></tr>
+    </table>
+  </div>
 </section>
 
 <section id="appointment">
-  <h2>Book an Appointment</h2>
-  <form>
-    <div class="form-group">
-      <input type="text" placeholder="Patient Name" required />
-    </div>
-    <div class="form-group">
-      <input type="tel" placeholder="Phone Number" required />
-    </div>
-    <div class="form-group">
-      <select required>
-        <option value="">Select Doctor</option>
-        <option>Dr. Samad Aftab</option>
-        <option>Dr. Bellobay</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <input type="date" required />
-    </div>
-    <button class="btn" type="submit">Submit Appointment</button>
-  </form>
+  <div class="card">
+    <h2>Book Appointment</h2>
+    <input type="text" placeholder="Patient Name">
+    <input type="tel" placeholder="Phone Number">
+    <select><option>Select Doctor</option><option>Dr. Example A</option><option>Dr. Example B</option></select>
+    <input type="date">
+    <button>Submit Appointment</button>
+  </div>
 </section>
 
 <section id="lab">
-  <h2>Laboratory Services (Sindlab)</h2>
-  <h3>Lab Timings</h3>
-  <p>Monday – Sunday: 8:00 AM – 10:00 PM</p>
-
-  <h3>Home Sample Collection</h3>
-  <p>Home sample collection is available. Please call or email us to schedule.</p>
-
-  <h3>Test Price List</h3>
-  <table>
-    <tr>
-      <th>Test Name</th>
-      <th>Price (PKR)</th>
-    </tr>
-    <tr>
-      <td>CBC</td>
-      <td>1200</td>
-    </tr>
-    <tr>
-      <td>LFT</td>
-      <td>2500</td>
-    </tr>
-    <tr>
-      <td>RFT</td>
-      <td>2200</td>
-    </tr>
-  </table>
-
-  <h3>Online Test Report Inquiry</h3>
-  <form>
-    <div class="form-group">
-      <input type="text" placeholder="Lab Reference / Invoice Number" required />
-    </div>
-    <button class="btn" type="submit">Check Report</button>
-  </form>
+  <div class="card">
+    <h2>Sindlab Laboratory</h2>
+    <p><strong>Timings:</strong> 8:00 AM – 10:00 PM (Daily)</p>
+    <p><strong>Home Sample Collection:</strong> Available on request</p>
+    <table>
+      <tr><th>Test</th><th>Price (PKR)</th></tr>
+      <tr><td>CBC</td><td>1200</td></tr>
+      <tr><td>LFT</td><td>2500</td></tr>
+      <tr><td>RFT</td><td>2200</td></tr>
+    </table>
+    <br>
+    <input type="text" placeholder="Lab Reference Number">
+    <button>Check Report</button>
+  </div>
 </section>
 
 <section id="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Address:</strong> Midway Commercial-B, OPP: Masjid-e-Sarwar near Park, Bahria Town Karachi</p>
-  <p><strong>Phone:</strong> 0336-8409409</p>
-  <p><strong>Email:</strong> medihealthcarebahria@gmail.com</p>
+  <div class="card">
+    <h2>Contact Information</h2>
+    <p><strong>Address:</strong> Midway Commercial-B, OPP: Masjid-e-Sarwar near Park, Bahria Town Karachi</p>
+    <p><strong>Phone:</strong> 0336-8409409</p>
+    <p><strong>Email:</strong> medihealthcarebahria@gmail.com</p>
+  </div>
 </section>
 
 <footer>
-  <p>&copy; 2025 Medi Health Care Center (MHCC). All Rights Reserved.</p>
+  <p>© 2025 Medi Health Care Center (MHCC)</p>
+  <p>All Rights Reserved</p>
 </footer>
 
 </body>
 </html>
-
-
-
-
