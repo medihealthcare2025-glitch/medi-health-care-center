@@ -25,8 +25,8 @@
       text-align:center;
     }
     header img{
-      width:110px;
-      margin-bottom:15px;
+      width:150px;
+      margin-bottom:20px;
     }
     nav{
       background:#fff;
@@ -51,6 +51,10 @@
     }
     nav ul li a:hover{color:var(--primary);}
     section{
+      max-width:1200px;
+      margin:50px auto;
+      padding:0 20px;
+    }
       max-width:1200px;
       margin:40px auto;
       padding:0 20px;
@@ -88,19 +92,12 @@
     }
     table th{background:#f1f1f1;}
     input,select,button{
-      width:100%;
-      padding:14px;
-      margin-bottom:15px;
-      border-radius:10px;
-      border:1px solid #ccc;
-      font-family:'Poppins',sans-serif;
-    }
-    button{
       background:var(--primary);
       color:#fff;
       border:none;
       font-weight:600;
       cursor:pointer;
+      font-size:1rem;
     }
     button:hover{background:#8b1a1a;}
     footer{
@@ -116,8 +113,8 @@
 
 <header>
   <img src="Logo.jpeg" alt="Medi Health Care Center Logo">
-  <h1>Medi Health Care Center</h1>
-  <p>Modern Care • Trusted Diagnostics • Expert Consultants</p>
+  <h1 style="font-size:2.4rem; margin-bottom:10px;">Medi Health Care Center</h1>
+  <p style="font-size:1.05rem; opacity:0.95;">Modern Care • Trusted Diagnostics • Expert Consultants</p>
 </header>
 
 <nav>
@@ -137,11 +134,11 @@
 
 <section id="doctors"><div class="card"><h2>Doctors & Fees</h2><table><tr><th>Doctor</th><th>Specialty</th><th>Timings</th><th>Fee (PKR)</th></tr><tr><td>Dr. Example A</td><td>General Physician</td><td>5:00 PM – 9:00 PM</td><td>1500</td></tr><tr><td>Dr. Example B</td><td>Gynecologist</td><td>6:00 PM – 9:00 PM</td><td>2000</td></tr></table></div></section>
 
-<section id="appointment"><div class="card"><h2>Book Appointment</h2><input type="text" placeholder="Patient Name"><input type="tel" placeholder="Phone Number"><select><option>Select Doctor</option><option>Dr. Example A</option><option>Dr. Example B</option></select><input type="date"><button>Submit Appointment</button></div></section>
+<section id="appointment"><div class="card"><h2>Book Appointment</h2><p style="margin-bottom:15px;">Book your appointment instantly via WhatsApp</p><a href="https://wa.me/923368409409" target="_blank" style="display:inline-block;background:#25D366;color:#fff;padding:14px 22px;border-radius:10px;font-weight:600;text-decoration:none;">📱 Book on WhatsApp</a></div></section>
 
-<section id="lab"><div class="card"><h2>Sindlab Laboratory</h2><p><strong>Timings:</strong> 8:00 AM – 10:00 PM (Daily)</p><p><strong>Home Sample Collection:</strong> Available on request</p><table><tr><th>Test</th><th>Price (PKR)</th></tr><tr><td>CBC</td><td>1200</td></tr><tr><td>LFT</td><td>2500</td></tr><tr><td>RFT</td><td>2200</td></tr></table><br><input type="text" placeholder="Lab Reference Number"><button>Check Report</button></div></section>
+<section id="lab"><div class="card"><h2>Sindlab Laboratory</h2><p><strong>Lab Timings:</strong> 10:00 AM – 9:00 PM (Daily)</p><p><strong>Home Sample Collection:</strong> Available soon</p></div></section>
 
-<section id="contact"><div class="card"><h2>Contact Information</h2><p><strong>Address:</strong> Midway Commercial-B, OPP: Masjid-e-Sarwar near Park, Bahria Town Karachi</p><p><strong>Phone:</strong> 0336-8409409</p><p><strong>Email:</strong> medihealthcarebahria@gmail.com</p></div></section>
+<section id="contact"><div class="card"><h2>Contact Information</h2><p><strong>Address:</strong> Midway Commercial-B, OPP: Masjid-e-Sarwar near Park, Bahria Town Karachi</p><p><strong>Phone:</strong> 0336-8409409</p><p><strong>Email:</strong> medihealthcarebahria@gmail.com</p><div style="margin-top:25px;"><iframe src="https://www.google.com/maps?q=Midway%20Commercial%20Bahria%20Town%20Karachi&output=embed" width="100%" height="300" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy"></iframe></div></div></section>
 
 <footer><p>© 2025 Medi Health Care Center (MHCC)</p><p>All Rights Reserved</p></footer>
 
