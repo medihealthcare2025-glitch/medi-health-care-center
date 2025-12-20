@@ -8,7 +8,6 @@
   <style>
     :root{
       --primary:#b22222;
-      --secondary:#0d6efd;
       --light:#f8f9fa;
       --dark:#212529;
     }
@@ -22,20 +21,8 @@
     header{
       background:#b22222;
       color:#fff;
-      padding:50px 20px 60px;
+      padding:40px 20px;
       text-align:center;
-    }
-    .logo-wrap{
-      display:inline-block;
-      background:#fff;
-      padding:18px 22px;
-      border-radius:18px;
-      box-shadow:0 8px 25px rgba(0,0,0,0.25);
-      margin-bottom:18px;
-    }
-    .logo-wrap img{
-      width:110px;
-      display:block;
     }
     header img{
       width:110px;
@@ -101,15 +88,19 @@
     }
     table th{background:#f1f1f1;}
     input,select,button{
-      background:linear-gradient(135deg,#f5c400,#ffdd55);
-      color:#000;
+      width:100%;
+      padding:14px;
+      margin-bottom:15px;
+      border-radius:10px;
+      border:1px solid #ccc;
+      font-family:'Poppins',sans-serif;
+    }
+    button{
+      background:var(--primary);
+      color:#fff;
       border:none;
       font-weight:600;
       cursor:pointer;
-      box-shadow:0 6px 18px rgba(0,0,0,0.15);
-    }
-    button:hover{
-      background:linear-gradient(135deg,#ffdd55,#f5c400);
     }
     button:hover{background:#8b1a1a;}
     footer{
@@ -124,9 +115,7 @@
 <body>
 
 <header>
-  <div class="logo-wrap">
-    <img src="Logo.jpeg" alt="Medi Health Care Center Logo">
-  </div>
+  <img src="Logo.jpeg" alt="Medi Health Care Center Logo">
   <h1>Medi Health Care Center</h1>
   <p>Modern Care • Trusted Diagnostics • Expert Consultants</p>
 </header>
@@ -142,78 +131,19 @@
   </ul>
 </nav>
 
-<section id="about">
-  <div class="card">
-    <h2>About Us</h2>
-    <p>Medi Health Care Center (MHCC) is a modern medical facility in Bahria Town Karachi offering consultant clinics, ultrasound services and diagnostic laboratory services in partnership with <strong>Sindlab</strong>. We focus on accuracy, care and convenience.</p>
-  </div>
-</section>
+<section id="about"><div class="card"><h2>About Us</h2><p>Medi Health Care Center (MHCC) is a modern medical facility in Bahria Town Karachi offering consultant clinics, ultrasound services and diagnostic laboratory services in partnership with <strong>Sindlab</strong>.</p></div></section>
 
-<section id="services">
-  <div class="card">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="service-box">Consultant Clinics</div>
-      <div class="service-box">Ultrasound</div>
-      <div class="service-box">Sindlab Diagnostics</div>
-      <div class="service-box">Home Sample Collection</div>
-      <div class="service-box">Online Report Inquiry</div>
-    </div>
-  </div>
-</section>
+<section id="services"><div class="card"><h2>Our Services</h2><div class="grid"><div class="service-box">Consultant Clinics</div><div class="service-box">Ultrasound</div><div class="service-box">Sindlab Diagnostics</div><div class="service-box">Home Sample Collection</div><div class="service-box">Online Report Inquiry</div></div></div></section>
 
-<section id="doctors">
-  <div class="card">
-    <h2>Doctors & Fees</h2>
-    <table>
-      <tr><th>Doctor</th><th>Specialty</th><th>Timings</th><th>Fee (PKR)</th></tr>
-      <tr><td>Dr. Example A</td><td>General Physician</td><td>5:00 PM – 9:00 PM</td><td>1500</td></tr>
-      <tr><td>Dr. Example B</td><td>Gynecologist</td><td>6:00 PM – 9:00 PM</td><td>2000</td></tr>
-    </table>
-  </div>
-</section>
+<section id="doctors"><div class="card"><h2>Doctors & Fees</h2><table><tr><th>Doctor</th><th>Specialty</th><th>Timings</th><th>Fee (PKR)</th></tr><tr><td>Dr. Example A</td><td>General Physician</td><td>5:00 PM – 9:00 PM</td><td>1500</td></tr><tr><td>Dr. Example B</td><td>Gynecologist</td><td>6:00 PM – 9:00 PM</td><td>2000</td></tr></table></div></section>
 
-<section id="appointment">
-  <div class="card">
-    <h2>Book Appointment</h2>
-    <input type="text" placeholder="Patient Name">
-    <input type="tel" placeholder="Phone Number">
-    <select><option>Select Doctor</option><option>Dr. Example A</option><option>Dr. Example B</option></select>
-    <input type="date">
-    <button>Submit Appointment</button>
-  </div>
-</section>
+<section id="appointment"><div class="card"><h2>Book Appointment</h2><input type="text" placeholder="Patient Name"><input type="tel" placeholder="Phone Number"><select><option>Select Doctor</option><option>Dr. Example A</option><option>Dr. Example B</option></select><input type="date"><button>Submit Appointment</button></div></section>
 
-<section id="lab">
-  <div class="card">
-    <h2>Sindlab Laboratory</h2>
-    <p><strong>Timings:</strong> 8:00 AM – 10:00 PM (Daily)</p>
-    <p><strong>Home Sample Collection:</strong> Available on request</p>
-    <table>
-      <tr><th>Test</th><th>Price (PKR)</th></tr>
-      <tr><td>CBC</td><td>1200</td></tr>
-      <tr><td>LFT</td><td>2500</td></tr>
-      <tr><td>RFT</td><td>2200</td></tr>
-    </table>
-    <br>
-    <input type="text" placeholder="Lab Reference Number">
-    <button>Check Report</button>
-  </div>
-</section>
+<section id="lab"><div class="card"><h2>Sindlab Laboratory</h2><p><strong>Timings:</strong> 8:00 AM – 10:00 PM (Daily)</p><p><strong>Home Sample Collection:</strong> Available on request</p><table><tr><th>Test</th><th>Price (PKR)</th></tr><tr><td>CBC</td><td>1200</td></tr><tr><td>LFT</td><td>2500</td></tr><tr><td>RFT</td><td>2200</td></tr></table><br><input type="text" placeholder="Lab Reference Number"><button>Check Report</button></div></section>
 
-<section id="contact">
-  <div class="card">
-    <h2>Contact Information</h2>
-    <p><strong>Address:</strong> Midway Commercial-B, OPP: Masjid-e-Sarwar near Park, Bahria Town Karachi</p>
-    <p><strong>Phone:</strong> 0336-8409409</p>
-    <p><strong>Email:</strong> medihealthcarebahria@gmail.com</p>
-  </div>
-</section>
+<section id="contact"><div class="card"><h2>Contact Information</h2><p><strong>Address:</strong> Midway Commercial-B, OPP: Masjid-e-Sarwar near Park, Bahria Town Karachi</p><p><strong>Phone:</strong> 0336-8409409</p><p><strong>Email:</strong> medihealthcarebahria@gmail.com</p></div></section>
 
-<footer>
-  <p>© 2025 Medi Health Care Center (MHCC)</p>
-  <p>All Rights Reserved</p>
-</footer>
+<footer><p>© 2025 Medi Health Care Center (MHCC)</p><p>All Rights Reserved</p></footer>
 
 </body>
 </html>
