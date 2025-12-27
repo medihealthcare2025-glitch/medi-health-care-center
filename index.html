@@ -181,6 +181,94 @@
       margin: 6px 0;
       font-size: 14px;
     }
+  
+    /* ================= MOBILE OPTIMIZATION ================= */
+    @media (max-width: 768px) {
+      header {
+        padding: 24px 16px 30px;
+      }
+
+      header img {
+        width: 100px;
+      }
+
+      header h1 {
+        font-size: 1.7rem;
+      }
+
+      header p {
+        font-size: 0.85rem;
+      }
+
+      nav ul {
+        gap: 6px;
+      }
+
+      nav ul li a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+      }
+
+      section {
+        margin: 30px auto;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      /* Table → Card-style on mobile */
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      table tr {
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 12px;
+        background: #ffffff;
+      }
+
+      table th {
+        display: none;
+      }
+
+      table td {
+        border: none;
+        padding: 6px 0;
+        font-size: 0.9rem;
+      }
+
+      table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 2px;
+        color: var(--primary);
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
+      }
+
+      .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        font-size: 26px;
+      }
+    }
   </style>
 </head>
 
@@ -240,48 +328,56 @@
           <th>Specialty</th>
           <th>Timings</th>
           <th>Fee (PKR)</th>
+          <th>Appointment</th>
         </tr>
         <tr>
           <td>Dr. Jahanzaib Asim</td>
           <td>General Physician</td>
           <td>6:00 PM – 7:30 PM (Mon to Wed)</td>
           <td>-</td>
+          <td><a href="https://wa.me/923368409409?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr.%20Jahanzaib%20Asim" target="_blank" class="button" style="padding:8px 14px;font-size:0.85rem;">WhatsApp</a></td>
         </tr>
         <tr>
           <td>Dr. Asad Ali</td>
           <td>Orthopedic & General Surgeon</td>
           <td>9:00 PM – 10:00 PM (Mon-Wed-Sat)</td>
           <td>-</td>
+          <td><a href="https://wa.me/923368409409?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr.%20Asad%20Ali" target="_blank" class="button" style="padding:8px 14px;font-size:0.85rem;">WhatsApp</a></td>
         </tr>
         <tr>
           <td>Dr. Sehrish</td>
           <td>Sonologist / Ultrasound Scanner</td>
           <td>11:00 AM – 01:00 PM (Daily)</td>
           <td>-</td>
+          <td><a href="https://wa.me/923368409409?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr.%20Sehrish" target="_blank" class="button" style="padding:8px 14px;font-size:0.85rem;">WhatsApp</a></td>
         </tr>
         <tr>
           <td>Dr. Faisal</td>
           <td>Child Specialist</td>
           <td>7:00 PM – 8:00 PM (Mon to Thurs)</td>
           <td>-</td>
+          <td><a href="https://wa.me/923368409409?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr.%20Faisal" target="_blank" class="button" style="padding:8px 14px;font-size:0.85rem;">WhatsApp</a></td>
         </tr>
         <tr>
           <td>Dr. Saira Farhan</td>
           <td>Psychiatrist</td>
           <td>12:00 PM – 2:00 PM (Saturday)</td>
           <td>-</td>
+          <td><a href="https://wa.me/923368409409?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr.%20Saira%20Farhan" target="_blank" class="button" style="padding:8px 14px;font-size:0.85rem;">WhatsApp</a></td>
         </tr>
         <tr>
           <td>Dr. Nashrah Aftab</td>
           <td>Physiotherapist (DPT)</td>
           <td>4:00 PM – 8:00 PM (Tue–Thurs–Sat)</td>
           <td>-</td>
+          <td><a href="https://wa.me/923368409409?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr.%20Nashrah%20Aftab" target="_blank" class="button" style="padding:8px 14px;font-size:0.85rem;">WhatsApp</a></td>
         </tr>
         <tr>
           <td>Dr. Seema Liaquat</td>
           <td>Sonologist / Ultrasound Scanner</td>
-          <td>5:00 PM – 7:00 PM (Daily except Fri–Sun)</td>
+          <td>5:00 PM – 7:00 PM (Mon to Sat)</td>
           <td>-</td>
+          <td><a href="https://wa.me/923368409409?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20with%20Dr.%20Seema%20Liaquat" target="_blank" class="button" style="padding:8px 14px;font-size:0.85rem;">WhatsApp</a></td>
         </tr>
       </table>
     </div>
@@ -336,4 +432,3 @@
 
 </body>
 </html>
-
